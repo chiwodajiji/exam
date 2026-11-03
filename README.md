@@ -142,9 +142,12 @@ START                      開始計時（需先 SET 且分鐘 > 0）
 
 | 圖片 | 圖說 |
 | --- | --- |
-| `docs/01_board.jpg` | NUCLEO-G474RE 接上三顆外接 LED 與 PC9 暫停按鈕的實體接線 |
-| `docs/02_pins.jpg` | PA0/PA1/PB10 與 PC9 接線特寫，對得上腳位表 |
-| `docs/03_leds_dimming.jpg` | 三燈依序漸暗進行中的樣子 |
+| `<img width="500" height="888" alt="image" src="https://github.com/user-attachments/assets/945ff9d4-afb0-4545-a574-60ce37e190f5" />
+` | NUCLEO-G474RE 接上三顆外接 LED 與 PC9 暫停按鈕的實體接線 |
+| `![Uploading image.png…]()
+` | PA0/PA1/PB10 與 PC9 接線特寫，對得上腳位表 |
+| `<img width="500" height="888" alt="image" src="https://github.com/user-attachments/assets/d271aa1e-a35e-4857-abbd-a39821289f6d" />
+` | 三燈依序漸暗進行中的樣子 |
 | `<img width="1324" height="913" alt="螢幕擷取畫面 2026-11-03 143642" src="https://github.com/user-attachments/assets/c2024a7d-1004-49e6-8e9c-bcdedcce67cd" /> | 終端機送 `SET 1`、`START` 與板子回 `收到指令`、`TIME_UP` 的畫面 |
 
 ---
