@@ -133,24 +133,20 @@ START                      開始計時（需先 SET 且分鐘 > 0）
   回 echo `收到指令: [...]`；收完一定重新呼叫 `HAL_UART_Receive_IT`。
 - **`HAL_GPIO_EXTI_Callback`（PC9）**：200ms 軟體消抖後切換 `pause_flag`（暫停/繼續）。
 
-### 時間校正
-- `total_ms = 分鐘 × 60 × 1000`；`calibrated_ms = total_ms × 88 / 100`。
-- 600 步（3 燈 × 200），`step_delay = calibrated_ms / 600`（最小 1ms）。
-- 用 `× 0.88` 硬校正 `HAL_Delay` 累積誤差（見第 10 節已知限制）。
 
 ---
 
 ## 8. 實作照片：每張附一行圖說
 
 > 本倉庫尚未包含實作照片。請拍攝下列畫面並 **commit 到 `docs/`**，
-> 再以上方相對路徑引用（不要放個資、學號、手機、密碼）。
 
 | 圖片 | 圖說 |
 | --- | --- |
 | `docs/01_board.jpg` | NUCLEO-G474RE 接上三顆外接 LED 與 PC9 暫停按鈕的實體接線 |
 | `docs/02_pins.jpg` | PA0/PA1/PB10 與 PC9 接線特寫，對得上腳位表 |
 | `docs/03_leds_dimming.jpg` | 三燈依序漸暗進行中的樣子 |
-| `docs/04_terminal.png` | 終端機送 `SET 1`、`START` 與板子回 `收到指令`、`TIME_UP` 的畫面 |
+| `<img width="1324" height="913" alt="螢幕擷取畫面 2026-11-03 143642" src="https://github.com/user-attachments/assets/c2024a7d-1004-49e6-8e9c-bcdedcce67cd" />
+` | 終端機送 `SET 1`、`START` 與板子回 `收到指令`、`TIME_UP` 的畫面 |
 
 ---
 
